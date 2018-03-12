@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="1dp"
+    tools:context=".MoviesDetails"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/movieTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="30dp"
+                android:background="#1f36b6"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="36sp" />
+
+
+            <ImageView
+                android:id="@+id/boxImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/movieTitle"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/movieTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft = "5dp"
+                android:paddingRight = "1dp"
+                android:paddingTop = "1dp"
+                android:layout_below="@+id/movieTitle"
+                android:layout_toRightOf="@+id/boxImage"
+                android:text="Rating"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft = "5dp"
+                android:paddingRight = "1dp"
+                android:paddingTop = "1dp"
+                android:paddingBottom = "5dp"
+                android:layout_below = "@+id/text3"
+                android:layout_toRightOf="@+id/boxImage"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnFav"
+                android:text="FAVORITE"
+                android:layout_below = "@+id/vote"
+                android:layout_toRightOf="@+id/boxImage"
+                android:paddingLeft = "0dp"
+                android:paddingRight = "0dp"
+                android:paddingTop = "0dp"
+                android:paddingBottom = "0dp"
+                android:gravity = "center"
+                android:onClick="favorite"/>
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft = "10dp"
+                android:paddingRight = "10dp"
+                android:paddingTop = "0dp"
+                android:paddingBottom = "10dp"
+                android:layout_below = "@+id/boxImage"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

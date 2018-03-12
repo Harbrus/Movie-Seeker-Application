@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Movie Seeker</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="prefEntries" translatable="false">
+        <item>Popularity</item>
+        <item>Favourites</item>
+        <item>Vote</item>
+    </string-array>
+    <string-array name="prefValues" translatable="false">
+        <item>popularity</item>
+        <item>favourites</item>
+        <item>vote</item>
+    </string-array>
+</resources>
